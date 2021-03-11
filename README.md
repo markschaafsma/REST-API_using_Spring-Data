@@ -22,7 +22,7 @@ This project has been built using Java SE 8 and Spring Boot components managed v
 ## Project Setup
 
 The Springboot project provides a microservice hosted on Tomcat and leverages Spring Data
-JPA repositories. Thus a H2 in-memory database is been included, and sample data loaded into this 
+JPA repositories. Thus a H2 in-memory database has been included, and sample data loaded into this 
 database on application startup. Data is hardcoded but could be file imports. 
 
 Spring Data automatically exposes RESTful APIs as per the methods in the Interface: 
@@ -87,11 +87,11 @@ To run and test the application, either:
 
 The following APIs have been exposed:
 
- - http://localhost:8080/accounts/
- - http://localhost:8080/accounts/{acctId}
- - http://localhost:8080/accounts/search/findByAcctNo?acctNo={acctNo}
- - http://localhost:8080/transactions/
- - http://localhost:8080/transactions/{transactionId}
+ - GET http://localhost:8080/accounts/
+ - GET http://localhost:8080/accounts/{acctId}
+ - GET http://localhost:8080/accounts/search/findByAcctNo?acctNo={acctNo}
+ - GET http://localhost:8080/transactions/
+ - GET http://localhost:8080/transactions/{transactionId}
 
-Create, Update and Delete APIs that are automatically exposed have been overrriden
+Create, Update and Delete APIs that are automatically exposed by Spring Data have been overrriden
 to prevent them from being exposed.
